@@ -1,6 +1,6 @@
 {
   "name": "reshift",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rewrite an abstract syntax tree",
   "main": "lib/reshift.js",
   "directories": {
