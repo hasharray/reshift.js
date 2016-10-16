@@ -2,7 +2,6 @@ var reshift = require('..');
 
 var content = [
   'console.log(\'hello world\')',
-  'var foo = 1',
 ].join('\n');
 
 var output = reshift(content, function(node) {
@@ -14,5 +13,3 @@ var output = reshift(content, function(node) {
 });
 
 eval(output.toString());
-
-setInterval(function() {});
