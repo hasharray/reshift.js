@@ -1,0 +1,33 @@
+{
+  "name": "reshift",
+  "version": "0.0.0",
+  "description": "rewrite an abstract syntax tree",
+  "main": "lib/reshift.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "acorn": "^4.0.3"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasharray/reshift.js.git"
+  },
+  "keywords": [
+    "syntax",
+    "ast"
+  ],
+  "author": "Casper Beyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hasharray/reshift.js/issues"
+  },
+  "homepage": "https://github.com/hasharray/reshift.js"
+}
