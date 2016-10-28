@@ -1,6 +1,6 @@
 {
   "name": "Reshift.js",
   "tagline": "Rewrite an abstract syntax tree",
-  "body": "# Reshift.js - rewrite an abstract syntax tree\r\n\r\nReshift.js lets you reshift and rewrite an abstract syntax tree on a recursive\r\nwalk, returning the re-written source code.\r\n\r\n## Example\r\n\r\nUppercase string literals:\r\n\r\n```javascript\r\nvar reshift = require('reshift');\r\n\r\nvar content = [\r\n  'console.log(\\'hello world\\')',\r\n].join('\\n');\r\n\r\nvar output = reshift(content, function(node) {\r\n  if (node.type == 'Literal') {\r\n    return node.raw.toUpperCase();\r\n  }\r\n\r\n  return node.toString();\r\n});\r\n\r\nconsole.log(output);\r\n```\r\n\r\n## Install\r\n\r\n```console\r\nnpm install reshift\r\n```\r\n\r\n## License\r\n\r\nMIT\r\n",
+  "body": "Reshift.js lets you reshift and rewrite an abstract syntax tree on a recursive\r\nwalk, returning the re-written source code.\r\n\r\n## Example\r\n\r\nUppercase string literals:\r\n\r\n```javascript\r\nvar reshift = require('reshift');\r\n\r\nvar content = [\r\n  'console.log(\\'hello world\\')',\r\n].join('\\n');\r\n\r\nvar output = reshift(content, function(node) {\r\n  if (node.type == 'Literal') {\r\n    return node.raw.toUpperCase();\r\n  }\r\n\r\n  return node.toString();\r\n});\r\n\r\nconsole.log(output);\r\n```\r\n\r\n## Install\r\n\r\n```console\r\nnpm install reshift\r\n```\r\n\r\n## License\r\n\r\nMIT\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
